@@ -1,0 +1,98 @@
+﻿body
+{
+    margin:5em 5em;
+}
+
+h1{
+    font-size:2em;
+    letter-spacing:2px;
+    line-height:3px;
+}
+
+.controls{
+    display: flex;
+    flex-direction:row;
+    justify-content:space-around;
+    align-items:center;
+}
+
+
+.mute{
+    width:2em;
+    height:2em;
+    margin-left:30px;
+    background-color:black;
+    color:white;
+    opacity:1;
+}
+
+.play {
+    width: 7em;
+    height: 2em;
+}
+select{
+
+   height:1.8em;
+   width:10em;
+   margin:3em;
+
+}
+
+
+.kick-pad, .snare-pad, .hihat-pad {
+    margin:4px;
+    padding:10px;
+    display:flex;
+    flex-direction:row;
+}
+
+
+.tempo{
+    margin:3em;
+
+}
+
+.tempo-slider{
+cursor:pointer;
+padding:0.3em;
+}
+
+.tempo p{
+    font-weight:bold;
+    font-family:Arial;
+    font-size:1em;
+}
+
+.pads{
+    width:3em;
+    height:3em;
+    opacity:0.2;
+}
+
+.pads.active{
+    opacity:1;
+}
+
+    .snare-pad.pads {
+        background-color:yellow;
+        margin:8px;
+    }
+
+.kick-pad.pads {
+    background-color:lightgreen;
+    margin: 8px;
+}
+
+.hihat-pad.pads {
+    background-color:red;
+    margin: 8px;
+}
+
+@keyframes my-animation{
+
+    from{transform:scale(1);}
+    to{transform:scale(1.2);
+    }
+
+}
+
